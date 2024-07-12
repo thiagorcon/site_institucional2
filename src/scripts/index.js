@@ -1,21 +1,36 @@
-function modalRegister(){
-  const modal = document.querySelector("#modalController");
-  const button = document.querySelectorAll(".showModal");
-  for(let i = 0; i <= button.length; i++){
-  button[i].addEventListener("click", () => {
-      modal.showModal();
-      closeModal()
-      
+function modal() {
+  const modalContainer = document.querySelector("#modalContainer");
+  const bnt = document.querySelector("#showMessage");
+
+  bnt.addEventListener("click", () => {
+    modalContainer.showModal();
+  });
+
+  closeModal();
+}
+
+function modal2() {
+  const modalContainer = document.querySelector("#modalContainer");
+  const bnt = document.querySelector("#showMessage2");
+
+  bnt.addEventListener("click", () => {
+    modalContainer.showModal();
+  });
+
+  closeModal();
+}
+
+function closeModal() {
+  const modalContainer = document.querySelector("#modalContainer");
+  btnClose = document.querySelector("#closeModal");
+
+  btnClose.addEventListener("click", () => {
+    modalContainer.close();
   });
 }
-}
 
-function closeModal(){
-  const button = document.querySelector(".closeModal");
-  const modal = document.querySelector("#modalController");
-  button.addEventListener("click", () => {
-      modal.close();
-  })
-}
+modal();
+modal2();
 
-modalRegister()
+
+

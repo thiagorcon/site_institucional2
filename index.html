@@ -12,7 +12,7 @@
         <div class="header__div">
             <img src="./src/assets/logo.svg" alt="Logo do site">
         <div>
-            <button class="header__button--enter">Entrar para próxima turma</button>
+            <button id="showMessage" class="header__button--enter">Entrar para próxima turma</button>
         </div>
         </div>
     </header>
@@ -35,7 +35,7 @@
             <div class="main__div_questions">
                 <h2 class="main__title_second">Dúvidas frequentes</h2>
                 <p class="main__paragraph_questions">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, dolor explicabo odit laborum quibusdam deleniti voluptatibus atque est dolores impedit iure eum officia magni temporibus, aliquid neque? Illum, nobis blanditiis?</p>
-                <button class="main__button--enter">Entrar para próxima turma</button>
+                <button id="showMessage2" class="main__button--enter">Entrar para próxima turma</button>
             </div>
             <div class="main__div_questions_second">
                 <div>
@@ -99,23 +99,33 @@
                 <p class="main__paragraph_last">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti voluptates culpa iusto accusantium molestias itaque labore, quidem ducimus voluptatum, pariatur quam harum, ab nulla magnam tenetur. Quos dolor iure vero.</p>
             </div>
         </section>
-        <dialog class="modalController">
-            <div class="modal__container">
-                <div class="modal__div">
-                    <h1>Cadastro</h1>
-                    <button id="closeModal">X</button>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus, eligendi ut minus cupiditate esse repudiandae dolorem necessitatibus eius rerum enim, quis assumenda tempore sed. Facilis tempore perferendis vero dolorem delectus.</p>
-                <form class="modal__div_form">
-                    <input type="email" placeholder="Digitar email" id="email" name="email">
-                    <button class="modal__button">Entrar na lista para próxima turma</button>
-                </form>
-            </div>
-        </dialog>
+        
     </main>
 
     <footer class="footer__container">
         <img src="./src/assets/logo.svg" alt="Logo do site">
     </footer>
+
+    <dialog id="modalContainer" class="modalContainer">
+        <section class="modalContainer__l1">
+          <h1>Cadastro</h1>
+          <button id="closeModal">X</button>
+        </section>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic aspernatur
+          animi nisi doloremque maxime asperiores dolorem natus illum, voluptates
+          explicabo iure incidunt reprehenderit, ea veniam rerum. Doloremque
+          quisquam vitae eum.
+        </p>
+        <input
+          class="modalContainer__input"
+          type="text"
+          placeholder="digitar email"
+        />
+        <button class="modalContainer__button">
+          Entrar na lista para a próxima turma
+        </button>
+      </dialog>
+
 </body>
 </html>
